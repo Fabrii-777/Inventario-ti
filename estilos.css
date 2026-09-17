@@ -1,0 +1,100 @@
+/* Resetea los márgenes automáticos de todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Color de fondo gris muy claro para una vista descansada */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 30px 15px;
+}
+
+/* Limita el ancho del contenido para que no se desparrame en pantallas grandes */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Contenedores tipo tarjeta blanca con bordes sutiles */
+.card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Distribución de los campos del formulario en columnas automáticas */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+/* Etiquetas pequeñas sobre cada campo */
+label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #6c757d;
+    margin-bottom: 4px;
+}
+
+/* Cajas de texto y listas desplegables */
+input, select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/* Botón negro minimalista para guardar */
+.btn-primary {
+    grid-column: 1 / -1;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Tabla simple con líneas divisorias delgadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Etiqueta verde suave para equipos operativos */
+.badge-ok {
+    background: #e6f4ea;
+    color: #137333;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* Enlace rojo discreto para borrar */
+.btn-delete {
+    color: #d93025;
+    text-decoration: none;
+}
